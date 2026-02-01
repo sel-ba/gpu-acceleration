@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Logs
+*.log
+
+# Training outputs
+data/
+runs/
+*.pt
+*.pth
+*.ckpt
+
+# IDEs
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+
+# Images (except assets)
+*.png
+*.jpg
+*.jpeg
+!figures/*.png
+!figures/*.jpg
+!assets/*.png
+
+# Jupyter
+.ipynb_checkpoints/
+
+# TensorBoard
+tensorboard_logs/
+checkpoints/
+
+# LaTeX temporary files
+*.aux
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+.~lock.*
+
+# Virtual environment
+venv/
+env/
+.env
