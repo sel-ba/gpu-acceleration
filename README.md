@@ -2,14 +2,14 @@
 
 Comprehensive performance analysis demonstrating **20.65× GPU speedup** for U-Net and **13.14× GPU speedup** for LSTM using PyTorch Profiler on RTX 3070 Ti.
 
-## 🎯 Key Results
+## Key Results
 
 | Model | CPU Time | GPU Time | Speedup | Time Reduction |
 |-------|----------|----------|---------|----------------|
 | **U-Net** | 1081.55s | 52.38s | **20.65×** | 95.2% |
 | **LSTM** | 270.92s | 20.62s | **13.14×** | 92.4% |
 
-## 📊 Projects
+## Projects
 
 ### 1. U-Net Image Segmentation
 - **Architecture**: Encoder-decoder with skip connections (4 down/up blocks)
@@ -109,7 +109,7 @@ runs/
     └── *.pt.trace.json
 ```
 
-## 🔬 Profiling Features
+## Profiling Features
 
 ### PyTorch Profiler Integration
 - **Operation-level analysis**: Track CPU/CUDA time for each operation
@@ -131,7 +131,7 @@ Interactive Jupyter notebooks with:
 - Model convergence comparison (CPU vs GPU numerical consistency)
 - Profiling insights and optimization recommendations
 
-## 📈 Hardware Environment
+## Hardware Environment
 
 - **GPU**: NVIDIA GeForce RTX 3070 Ti Laptop
 - **CUDA**: 12.8
@@ -140,7 +140,7 @@ Interactive Jupyter notebooks with:
 - **RAM**: 31 GB
 - **OS**: Linux (Arch)
 
-## 🚀 TensorBoard
+## TensorBoard
 
 View detailed profiling traces:
 
@@ -156,7 +156,7 @@ Navigate to http://localhost:6006 → PROFILE tab to explore:
 - Kernel launch patterns
 - CPU-GPU synchronization points
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 .
@@ -181,7 +181,7 @@ Navigate to http://localhost:6006 → PROFILE tab to explore:
 └── README.md
 ```
 
-## 📄 LaTeX Report
+## LaTeX Report
 
 Comprehensive analysis report with:
 - Architecture specifications and training configurations
@@ -202,7 +202,7 @@ Or include sections in your own report:
 \input{gpu_analysis_sections.tex}
 ```
 
-## 🎓 Key Insights
+## Key Insights
 
 ### Why U-Net Has Higher Speedup (20.65× vs 13.14×)
 1. **Convolution parallelism**: 2D convolutions computed independently across thousands of CUDA cores
@@ -216,7 +216,7 @@ Or include sections in your own report:
 3. **Irregular memory access**: Complex patterns in gate computations
 4. **Still significant**: 13× speedup from batch parallelism and gate-level parallelism
 
-## 📝 Notes
+## Notes
 
 - Both models achieve numerical consistency between CPU and GPU (<1% difference)
 - First epoch often shows initialization overhead (especially for LSTM)
